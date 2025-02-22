@@ -25,31 +25,23 @@ MySQL: As the database (can be swapped with another relational database).
 
 Maven: For project dependency management.
 
-# ElectIQ-HUB
-│
-├── src/                           
-│   └── main/                       
-│       └── java/                   
-│           └── com/                
-│               └── electiqhub/     # Package for the main code
-│                   ├── controller/   # REST controllers for API endpoints
-│                   │   └── CandidateController.java
-│                   ├── dao/          # Data Access Object (DAO) classes
-│                   │   └── CandidateDAO.java
-│                   ├── entity/       # Entity classes representing database tables
-│                   │   └── Candidate.java
-│                   ├── service/      # Service classes for business logic
-│                   │   └── CandidateService.java
-│                   └── ElectIQHubApplication.java  # Main Spring Boot application class
-│
-├── src/main/resources/                     
-│   ├── application.properties           # Spring Boot application properties
-│   ├── static/                          # Static files (HTML, CSS, JS)
-│   ├── templates/                       # Templates (if using Thymeleaf or similar)
-│
-├── src/test/java/com/electiqhub/        # Test classes
-│   └── ElectIQHubApplicationTests.java  # Integration test for the Spring Boot application
-│
-├── pom.xml                             # Maven build file with Spring Boot, Hibernate, and other dependencies
-├── README.md                           # Project documentation
-└── target/                             # Compiled project files
+# Key Packages and Classes
+controller/: Contains REST API controllers to handle incoming HTTP requests.
+
+      .CandidateController.java: REST controller for performing CRUD operations on the Candidate entity via API endpoints.
+
+dao/: Data Access Object (DAO) classes responsible for database interaction.
+
+CandidateDAO.java: Manages database operations (CRUD) for the Candidate entity.
+entity/: Entity classes representing database tables.
+
+Candidate.java: Represents the Candidate entity, with fields such as id, name, party, constituency, etc.
+service/: Service classes that implement business logic for interacting with entities.
+
+CandidateService.java: Contains logic for managing Candidate entities, including validation, processing, and interaction with the DAO.
+exception/: Custom exceptions for handling specific application errors.
+
+CustomException.java: Handles errors related to entity validation or other business logic issues.
+config/: Configuration classes for setting up Spring Boot and Hibernate.
+
+AppConfig.java: Contains Spring Boot configuration settings like Hibernate configurations, entity scanning, etc.
