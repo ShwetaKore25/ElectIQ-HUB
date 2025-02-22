@@ -26,7 +26,7 @@ MySQL: As the database (can be swapped with another relational database).
 Maven: For project dependency management.
 
 # Key Packages and Classes
-controller/: Contains REST API controllers to handle incoming HTTP requests.
+# controller/: Contains REST API controllers to handle incoming HTTP requests.
 
   CandidateController.java: REST controller for performing CRUD operations on the Candidate entity via API endpoints.
 
