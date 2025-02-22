@@ -15,15 +15,12 @@ MySQL Database: Uses MySQL for persistent storage (can be swapped with other rel
 Hibernate ORM: Handles object-relational mapping (ORM) for entities.
 
 # Technologies Used
-Java 8+
+-Java 8+
+-Spring Boot: For building and managing the application.
+-Hibernate ORM: For managing entity persistence.
+-MySQL: As the database (can be swapped with another relational database).
 
-Spring Boot: For building and managing the application.
-
-Hibernate ORM: For managing entity persistence.
-
-MySQL: As the database (can be swapped with another relational database).
-
-Maven: For project dependency management.
+- Maven: For project dependency management.
 
 # Key Packages and Classes
 1) controller/: Contains REST API controllers to handle incoming HTTP requests.
