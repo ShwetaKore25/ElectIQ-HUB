@@ -59,9 +59,11 @@ Update the application.properties file located in src/main/resources/ with your 
 ### Example application.properties Configuration:
 
 - Server Configuration
+  
 server.port=8080
 
 - Database Configuration (MySQL)
+  
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=root
 spring.datasource.password=password
@@ -69,14 +71,15 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
 
 - Hibernate Configuration
+  
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-# Logging Configuration
+## Logging Configuration
 logging.level.org.springframework.web=DEBUG
 logging.level.org.hibernate.SQL=DEBUG
 
-# Logging Configuration
+## Logging Configuration
 logging.level.org.springframework.web=DEBUG
 logging.level.org.hibernate.SQL=DEBUG
 Step 3: Build and Run the Project
